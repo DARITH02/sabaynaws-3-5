@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Siemreap&display=swap");
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /*set for use rem 1rem=10px */
+  font-size: 62.5%;
+}
+body {
+  font-size: 16px;
+}
+
+:root {
+  --color-red: rgb(36, 1, 119);
+}
+h1,
+h2 {
+  font-size: 2.2rem;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+span {
+  display: inline-block;
+}
+span,
+div,
+section,
+main,
+nav,
+article,
+i {
+  font-size: 1.8rem;
+}
+
+.container-width {
+  max-width: 75%;
+  margin: auto;
+}
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+}
+.btn-one {
+  background-color: blue;
+}
+
+/* mobile */
+header {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header {
+    background-color: rgb(18, 18, 18);
+    height: 120px;
+    display: block;
+  }
+  .header {
+    height: 100%;
+
+    padding: 15px 0;
+  }
+  .header img {
+    width: 90px;
+    height: 100%;
+  }
+  .navigation {
+    background-color: red;
+  }
+  .nav ul {
+    display: flex;
+    gap: 10px;
+  }
+  .nav ul li {
+    padding: 10px 15px;
+  }
+  .nav ul li:first-child {
+    background-color: blue;
+  }
+  .nav ul li a {
+    color: white;
+  }
+}
+@media (min-width: 1024px) {
+}
