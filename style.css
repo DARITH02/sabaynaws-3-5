@@ -85,10 +85,17 @@ header {
   color: whitesmoke;
   font-size: 25px;
 }
+.slid-toggle-mobile {
+  display: none;
+  background-color: red;
+  animation: showMenuMobile 0.3s ease-in-out forwards;
+}
+
+/* tablet */
 
 @media (min-width: 768px) {
   .container-width {
-    max-width: 75%;
+    max-width: 80%;
     margin: auto;
   }
   header {
@@ -113,7 +120,6 @@ header {
   }
   .mobile {
     display: none;
-    height: 500px;
   }
 
   .nav .menu-desktop {
@@ -130,6 +136,64 @@ header {
     font-family: "Open Sans", "Bokor", sans-serif;
     color: white;
   }
+  .slid-toggle-mobile {
+    display: none;
+  }
+  .slid-toggle-mobile {
+    animation: hidMenuMobile 0.3s ease-in-out forwards;
+  }
+  .grid-hero {
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 42% 33% auto;
+  }
+  .hero-items-1 {
+    background-image: url("https://cdn.sabay.com/cdn/media.sabay.com/media/Rith.file/filenew/68c8ee2b16a58_1757998620_small.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  .hero-items-2 {
+    background-image: url("https://cdn.sabay.com/cdn/media.sabay.com/media/Rith.file/fileSpec/68c3e5e8839aa_1757668800_small.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  .hero-item-3-top {
+    width: 98%;
+    margin-left: 2%;
+    height: 99%;
+    background-color: rgb(152, 152, 209);
+    padding: 5px;
+    margin-bottom: 1%;
+  }
+  .hero-item-6-bottom {
+    margin-top: 1%;
+    margin-left: 2%;
+    width: 98%;
+    height: 99%;
+    background-color: rgb(152, 152, 209);
+    padding: 5px;
+  }
 }
+
 @media (min-width: 1024px) {
+}
+
+@keyframes showMenuMobile {
+  from {
+    min-height: 0;
+  }
+  to {
+    min-height: 200px;
+  }
+}
+@keyframes hidMenuMobile {
+  from {
+    min-height: 200px;
+  }
+  to {
+    min-height: 0;
+  }
 }
