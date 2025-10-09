@@ -90,6 +90,15 @@ header {
   background-color: red;
   animation: showMenuMobile 0.3s ease-in-out forwards;
 }
+/* hero grid laptop */
+.grid-hero {
+  display: none;
+}
+.slide-mobile {
+  display: block;
+  height: 300px;
+  background-color: blue;
+}
 
 /* tablet */
 
@@ -161,6 +170,19 @@ header {
     background-position: center;
     background-size: 100% 100%;
   }
+  .hero-items-4 {
+    background-image: url("https://cdn.sabay.com/cdn/media.sabay.com/media/Rith.file/fileSpec/68c3d53b39744_1757664540_small.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  .hero-items-5 {
+    background-image: url("https://cdn.sabay.com/cdn/media.sabay.com/media/Rith.file/fileSpec/68c12cb3b869b_1757490300_small.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
   .hero-item-3-top {
     width: 98%;
     margin-left: 2%;
@@ -185,18 +207,48 @@ header {
   }
   .hero-title {
     position: absolute;
-    bottom: 20%;
+    bottom: 18%;
     color: whitesmoke;
     font-weight: bold;
     padding: 0 30px;
+    transition: all 0.3s;
   }
+  .hero-hover:hover > .hero-title {
+    transform: translateY(-30px);
+    bottom: 33%;
+    color: red;
+  }
+  .hid {
+    position: absolute;
+    width: 100%;
+    min-height: 0;
+    padding: 0 30px;
+
+    bottom: 13%;
+    opacity: 0;
+
+    transition: all 0.3s;
+    color: white;
+    font-size: 1.4rem;
+  }
+  .hero-hover:hover > .hid {
+    transform: translateY(-20px);
+    opacity: 100%;
+  }
+
   .date {
     position: absolute;
     bottom: 0;
+    width: 100%;
     display: block;
     padding: 15px 30px;
     color: white;
     font-weight: bold;
+  }
+
+  /* mobile slid */
+  .slide-mobile {
+    display: none;
   }
 }
 
