@@ -115,6 +115,7 @@ header {
   font-weight: bold;
 }
 
+/* main section */
 .grid-main-section {
   display: grid;
   grid-auto-flow: column;
@@ -349,10 +350,10 @@ header {
   }
   .child-main-section {
     grid-area: child-main;
-    width: 80%;
+    width: 100%;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
   .items-child-section {
@@ -413,9 +414,22 @@ header {
     padding: 0 20px;
     clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
   }
+  .grid-main-section,
+  .child-main-section {
+    grid-auto-flow: unset;
+    grid-auto-columns: unset;
+    overflow-x: unset;
+    height: unset;
+  }
 }
 
 @media (min-width: 1024px) {
+  .child-main-section {
+    width: 80%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @keyframes showMenuMobile {
